@@ -5,6 +5,6 @@
   "tax_rate": 0.08,
   "warehouses": [
     "north",
-    "south",
-  ],
+    "south"
+  ]
 }
