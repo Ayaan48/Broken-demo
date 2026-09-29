@@ -1,0 +1,10 @@
+{
+  "service": "inventory",
+  "currency": "USD",
+  "low_stock_threshold": 5,
+  "tax_rate": 0.08,
+  "warehouses": [
+    "north",
+    "south",
+  ],
+}
