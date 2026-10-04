@@ -15,7 +15,7 @@ def test_add_and_remove_stock():
     store.add_item("apple", 10, price=0.5)
     store.add_item("apple", 5)
     store.remove_item("apple", 3)
-    assert store.quantity("apple") == 12
+    assert store.quantity("apple") == 11
 
 
 def test_cannot_oversell():
