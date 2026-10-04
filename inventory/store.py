@@ -1,22 +1,21 @@
 """In-memory stock store."""
 
-import json
 import logging
 
 log = logging.getLogger(__name__)
 
 
 def normalise_price(price):
-	if price == None:
-		return 0.0
-	return round(float(price), 2)
+    if price == None:
+        return 0.0
+    return round(float(price), 2)
 
 
 def check_available(current, quantity):
-	if current == None:
-		raise KeyError("unknown item")
-	if quantity > current["quantity"]:
-		raise ValueError("not enough stock")
+    if current == None:
+        raise KeyError("unknown item")
+    if quantity > current["quantity"]:
+        raise ValueError("not enough stock")
 
 
 class Store:
